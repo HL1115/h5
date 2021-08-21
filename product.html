@@ -97,7 +97,8 @@
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="https://h5.leoao.com/promotion/experience-card.html#/card-receive?UTM=0-1.2-0.3-1039.0-0.0&activityId=1039">
+                <a
+                    href="https://h5.leoao.com/promotion/experience-card.html#/card-receive?UTM=0-1.2-0.3-1039.0-0.0&activityId=1039">
                     <img class="pro" src="imgs/lk.png" alt="">
                     <img class="logo" src="imgs/lkl.png" alt="">
                 </a>
@@ -143,7 +144,9 @@
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 4,
             spaceBetween: 10,
-            autoplay:true,
+            autoplay: {
+                delay: 2000,
+            },
             centeredSlides: true,
             loop: true,
             on: {
@@ -160,8 +163,8 @@
         open.style.width = 352 * per + 'px'
         rule.style.top = 617 * per + 'px'
 
-        open.onclick = function(){
-            location.href = 'chudaikou.html#'+activeIndex
+        open.onclick = function () {
+            location.href = 'chudaikou.html#' + activeIndex
         }
     </script>
 </body>
