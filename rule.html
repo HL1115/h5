@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{padding: 0;margin: 0;}
+            .rule{
+                width: 100%;
+                display: block;
+            }
+            .back{
+                position: absolute;
+
+            }
+        </style>
+    </head>
+    <body>
+        <img class="back" onclick="history.back()" src="imgs/back.png" alt="">
+        <img class="rule" src="imgs/rulepage.png" alt="">
+        <script>
+            let back = document.querySelector('.back'),
+                per = document.documentElement.clientWidth/750;
+            back.style.width = 95*per+'px'
+            back.style.top = 100*per+'px'
+            back.style.left = 20*per+'px'
+        </script>
+    </body>
+</html>

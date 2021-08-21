@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/swiper.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url(imgs/2bg.png);
+        }
+
+        .w100 {
+            width: 100%;
+        }
+
+        .rule {
+            position: absolute;
+            right: 2.27%;
+        }
+
+        .open {
+            display: block;
+            margin: 30px auto 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* border: 2px solid #1cdccc; */
+            border-radius: 10px;
+            box-sizing: border-box;
+            transition: 300ms;
+            transform: scale(0.8);
+            transform-origin:center bottom;
+        }
+        .swiper-slide .pro{
+            width: 100%;
+            display: block;
+        }
+
+        .swiper-slide-active,
+        .swiper-slide-duplicate-active {
+            transform: scale(1);
+            transform-origin:center bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="w100" src="imgs/21.png" alt="">
+    <img onclick="location.href='rule.html'" class="rule" src="imgs/rule.png" alt="">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/hsh.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/kkj.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/kmj.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/lk.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/ly.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/ml.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/td.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/xhq.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="pro" src="imgs/xxs.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <img class="open" src="imgs/btn.png" alt="">
+    <img class="w100" src="imgs/ruletxt.png" alt="">
+    <script src="dist/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            centeredSlides: true,
+            loop: true,
+        });
+
+        let rule = document.querySelector('.rule'),
+            open = document.querySelector('.open'),
+            per = document.documentElement.clientWidth / 750;
+        rule.style.width = 30 * per + 'px'
+        open.style.width = 352 * per + 'px'
+        rule.style.top = 617 * per + 'px'
+    </script>
+</body>
+
+</html>
