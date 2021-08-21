@@ -46,21 +46,27 @@
             box-sizing: border-box;
             vertical-align: bottom;
             transition: 300ms;
-            transform: scale(1);
-            -webkit-transform: scale(1);
+            /* transform: scale(0.8);
+            -webkit-transform: scale(0.8);
             transform-origin:center bottom;
-            -webkit-transform-origin:center bottom;
+            -webkit-transform-origin:center bottom; */
         }
         .swiper-slide .pro{
             width: 100%;
             display: block;
         }
+        .swiper-slide img{
+            transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            transform-origin:center bottom;
+            -webkit-transform-origin:center bottom;
+        }
 
-        .swiper-slide-active,
-        .swiper-slide-duplicate-active {
+        .swiper-slide-active img,
+        .swiper-slide-duplicate-active img{
             /* width: 27%!important; */
-            transform: scale(1.5);
-            -webkit-transform: scale(1.5);
+            transform: scale(1);
+            -webkit-transform: scale(1);
         }
     </style>
 </head>
