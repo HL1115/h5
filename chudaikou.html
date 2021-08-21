@@ -7,19 +7,35 @@
         <style>
             *{padding: 0;margin: 0;}
             body{
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                background: url(imgs/1.png) no-repeat top/cover;
+                text-align: center;
+                /* height: 100vh; */
+                /* display: flex;
+                justify-content: center; */
+                /* background: url(imgs/hshc.png) no-repeat top/cover; */
             }
-            img{
-                width: 53%;
+            .c{
+                width: 100%;
+                display: block;
+            }
+            .btn{
+                width: 50%;
+                left: 25%;
                 position: absolute;
-                bottom: 70px;
+                top: 622px
             }
         </style>
     </head>
     <body>
-        <img onclick="location.href='product.html'" src="imgs/2.png" alt="">
+        <img class="c" src="imgs/hshc.png" alt="">
+        <img class="btn" src="imgs/jxbtn.png" alt="">
+        <script>
+            let imgarr = ['hshc.png','kkjc.png','kmjc.png','lkc.png','lyc.png','mlc.png','tdc.png','xhqc.png','xxsc.png']
+            let hash = location.hash.slice(1)
+            let btn = document.querySelector('.btn'),
+                c = document.querySelector('.c'),
+                per = document.documentElement.clientWidth / 750;
+            btn.style.top = 1245 * per + 'px';
+            c.src = 'imgs/'+imgarr[hash];
+        </script>
     </body>
 </html>

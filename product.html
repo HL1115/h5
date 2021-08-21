@@ -33,38 +33,40 @@
         .swiper-container {
             width: 100%;
         }
-        .swiper-wrapper{
+
+        .swiper-wrapper {
             display: flex;
             align-items: flex-end;
 
         }
+
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-            /* border: 2px solid #1cdccc; */
             border-radius: 10px;
             box-sizing: border-box;
-            vertical-align: bottom;
             transition: 300ms;
-            /* transform: scale(0.8);
-            -webkit-transform: scale(0.8);
-            transform-origin:center bottom;
-            -webkit-transform-origin:center bottom; */
         }
-        .swiper-slide .pro{
+
+        .swiper-slide .pro {
             width: 100%;
             display: block;
         }
-        .swiper-slide img{
-            transform: scale(0.8);
-            -webkit-transform: scale(0.8);
-            transform-origin:center bottom;
-            -webkit-transform-origin:center bottom;
+
+        .swiper-slide .logo {
+            margin-top: 20px;
+            width: 80%;
         }
 
-        .swiper-slide-active img,
-        .swiper-slide-duplicate-active img{
-            /* width: 27%!important; */
+        .swiper-slide .pro {
+            transform: scale(0.8);
+            -webkit-transform: scale(0.8);
+            transform-origin: center bottom;
+            -webkit-transform-origin: center bottom;
+        }
+
+        .swiper-slide-active .pro,
+        .swiper-slide-duplicate-active .pro {
             transform: scale(1);
             -webkit-transform: scale(1);
         }
@@ -77,44 +79,77 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <img class="pro" src="imgs/hsh.png" alt="">
+                <a href="">
+                    <img class="pro" src="imgs/hsh.png" alt="">
+                    <img class="logo" src="imgs/hshl.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img class="pro" src="imgs/kkj.png" alt="">
+                <a href="">
+                    <img class="pro" src="imgs/kkj.png" alt="">
+                    <img class="logo" src="imgs/kkjl.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img class="pro" src="imgs/kmj.png" alt="">
+                <a href="https://www.kmjiu.com/b2c_vue/?from=singlemessage&isappinstalled=0#/list/MTTY">
+                    <img class="pro" src="imgs/kmj.png" alt="">
+                    <img class="logo" src="imgs/kmjl.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img class="pro" src="imgs/lk.png" alt="">
+                <a href="https://h5.leoao.com/promotion/experience-card.html#/card-receive?UTM=0-1.2-0.3-1039.0-0.0&activityId=1039">
+                    <img class="pro" src="imgs/lk.png" alt="">
+                    <img class="logo" src="imgs/lkl.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img class="pro" src="imgs/ly.png" alt="">
+                <a href="https://j.youzan.com/HxdEf2">
+                    <img class="pro" src="imgs/ly.png" alt="">
+                    <img class="logo" src="imgs/lyl.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img class="pro" src="imgs/ml.png" alt="">
+                <a href="https://m.lzzuan.com/index.php?m=default&c=activity&a=hd&name=choker&ADTAG=TDSHCHKL">
+                    <img class="pro" src="imgs/ml.png" alt="">
+                    <img class="logo" src="imgs/mll.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img class="pro" src="imgs/td.png" alt="">
+                <a href="">
+                    <img class="pro" src="imgs/td.png" alt="">
+                    <img class="logo" src="imgs/tdl.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img class="pro" src="imgs/xhq.png" alt="">
+                <a href="https://www.heyqun.com.cn/active/lhkActive/index.html?type=369">
+                    <img class="pro" src="imgs/xhq.png" alt="">
+                    <img class="logo" src="imgs/xhql.png" alt="">
+                </a>
             </div>
             <div class="swiper-slide">
-                <img class="pro" src="imgs/xxs.png" alt="">
+                <a href="http://xuexianshou.mikecrm.com/1bMArm1">
+                    <img class="pro" src="imgs/xxs.png" alt="">
+                    <img class="logo" src="imgs/xxsl.png" alt="">
+                </a>
             </div>
-            
+
         </div>
     </div>
     <img class="open" src="imgs/btn.png" alt="">
     <img class="w100" src="imgs/ruletxt.png" alt="">
     <script src="dist/swiper.min.js"></script>
     <script>
+        let activeIndex = 0;
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 4,
             spaceBetween: 10,
             centeredSlides: true,
             loop: true,
+            on: {
+                slideChangeTransitionEnd: function () {
+                    activeIndex = this.realIndex;
+                },
+            },
         });
 
         let rule = document.querySelector('.rule'),
@@ -123,6 +158,10 @@
         rule.style.width = 30 * per + 'px'
         open.style.width = 352 * per + 'px'
         rule.style.top = 617 * per + 'px'
+
+        open.onclick = function(){
+            location.href = 'chudaikou.html#'+activeIndex
+        }
     </script>
 </body>
 
