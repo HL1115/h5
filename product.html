@@ -33,18 +33,23 @@
         .swiper-container {
             width: 100%;
         }
+        .swiper-wrapper{
+            display: flex;
+            align-items: flex-end;
 
+        }
         .swiper-slide {
             text-align: center;
             font-size: 18px;
             /* border: 2px solid #1cdccc; */
             border-radius: 10px;
             box-sizing: border-box;
-            transition: 300ms;
+            vertical-align: bottom;
+            /* transition: 300ms;
             transform: scale(0.8);
             -webkit-transform: scale(0.8);
             transform-origin:center bottom;
-            -webkit-transform-origin:center bottom;
+            -webkit-transform-origin:center bottom; */
         }
         .swiper-slide .pro{
             width: 100%;
@@ -53,8 +58,9 @@
 
         .swiper-slide-active,
         .swiper-slide-duplicate-active {
-            transform: scale(1);
-            -webkit-transform: scale(1);
+            width: 25%!important;
+            /* transform: scale(1);
+            -webkit-transform: scale(1); */
         }
     </style>
 </head>
