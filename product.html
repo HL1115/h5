@@ -79,13 +79,13 @@
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a href="">
+                <a>
                     <img class="pro" src="imgs/hsh.png" alt="">
                     <img class="logo" src="imgs/hshl.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="">
+                <a href="#小程序://自由座/氪空间/9S5UuKg9FakzYyp">
                     <img class="pro" src="imgs/kkj.png" alt="">
                     <img class="logo" src="imgs/kkjl.png" alt="">
                 </a>
@@ -116,9 +116,15 @@
                 </a>
             </div>
             <div class="swiper-slide">
-                <a href="">
+                <a href="https://m.24tidy.com/tidyCoupon/activity/newTemp/?actId=1255">
                     <img class="pro" src="imgs/td.png" alt="">
                     <img class="logo" src="imgs/tdl.png" alt="">
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a>
+                    <img class="pro" src="imgs/blogo.png" alt="">
+                    <img class="logo" src="imgs/slogo.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
@@ -140,7 +146,6 @@
     <img class="w100" src="imgs/ruletxt.png" alt="">
     <script src="dist/swiper.min.js"></script>
     <script>
-        let activeIndex = 0;
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 4,
             spaceBetween: 10,
@@ -149,11 +154,6 @@
             },
             centeredSlides: true,
             loop: true,
-            on: {
-                slideChangeTransitionEnd: function () {
-                    activeIndex = this.realIndex;
-                },
-            },
         });
 
         let rule = document.querySelector('.rule'),
@@ -164,7 +164,7 @@
         rule.style.top = 617 * per + 'px'
 
         open.onclick = function () {
-            location.href = 'chudaikou.html#' + activeIndex
+            location.href = 'chudaikou.html'
         }
     </script>
 </body>

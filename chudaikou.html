@@ -29,13 +29,13 @@
         <img class="c" src="imgs/hshc.png" alt="">
         <img class="btn" src="imgs/jxbtn.png" alt="">
         <script>
-            let imgarr = ['hshc.png','kkjc.png','kmjc.png','lkc.png','lyc.png','mlc.png','tdc.png','xhqc.png','xxsc.png']
-            let hash = location.hash.slice(1)
+            let imgarr = ['hshc.png','kkjc.png','kmjc.png','lkc.png','lyc.png','mlc.png','tdc.png','tdxhc.png','xhqc.png','xxsc.png']
+            let ran = Math.floor( Math.random()*10 )
             let btn = document.querySelector('.btn'),
                 c = document.querySelector('.c'),
                 per = document.documentElement.clientWidth / 750;
             btn.style.top = 1245 * per + 'px';
-            c.src = 'imgs/'+imgarr[hash];
+            c.src = 'imgs/'+imgarr[ran];
         </script>
     </body>
 </html>
