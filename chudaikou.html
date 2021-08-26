@@ -6,13 +6,6 @@
         <title>盲盒活动</title>
         <style>
             *{padding: 0;margin: 0;}
-            body{
-                text-align: center;
-                /* height: 100vh; */
-                /* display: flex;
-                justify-content: center; */
-                /* background: url(imgs/hshc.png) no-repeat top/cover; */
-            }
             .c{
                 width: 100%;
                 display: block;
@@ -26,8 +19,10 @@
         </style>
     </head>
     <body>
-        <img class="c" src="imgs/hshc.png" alt="">
-        <img class="btn" src="imgs/jxbtn.png" alt="">
+        <img class="c" src="./imgs/hshc.png" alt="">
+        <a href="https://m.24tidy.com/flowerGoods.html?groupType=plant&groupId=9235&userKey=f07fe04abd319724e183bee540686f35">
+            <img class="btn" src="./imgs/jxbtn.png" alt="">
+        </a>
         <script>
             let imgarr = ['hshc.png','kkjc.png','kmjc.png','lkc.png','lyc.png','mlc.png','tdc.png','tdxhc.png','xhqc.png','xxsc.png']
             let ran = Math.floor( Math.random()*10 )
@@ -35,7 +30,7 @@
                 c = document.querySelector('.c'),
                 per = document.documentElement.clientWidth / 750;
             btn.style.top = 1245 * per + 'px';
-            c.src = 'imgs/'+imgarr[ran];
+            c.src = './imgs/'+imgarr[ran];
         </script>
     </body>
 </html>

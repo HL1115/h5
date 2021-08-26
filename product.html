@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>盲盒活动</title>
-    <link rel="stylesheet" href="dist/swiper.min.css">
+    <link rel="stylesheet" href="./dist/swiper.min.css">
     <style>
         * {
             padding: 0;
@@ -13,7 +13,7 @@
         }
 
         body {
-            background: url(imgs/2bg.png);
+            background: url(./imgs/2bg.png);
         }
 
         .w100 {
@@ -74,77 +74,78 @@
 </head>
 
 <body>
-    <img class="w100" src="imgs/21.png" alt="">
-    <img onclick="location.href='rule.html'" class="rule" src="imgs/rule.png" alt="">
+    <audio src="./dist/bg.mp3" autoplay></audio>
+    <img class="w100" src="./imgs/21.png" alt="">
+    <img onclick="location.href='./rule.html'" class="rule" src="./imgs/rule.png" alt="">
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <a>
-                    <img class="pro" src="imgs/hsh.png" alt="">
-                    <img class="logo" src="imgs/hshl.png" alt="">
+                <a href="https://h5.hunshehui.cn/ec/?s=1013&f=2#/pages/home/specialSubject?pageCode=bbd173d2">
+                    <img class="pro" src="./imgs/hsh.png" alt="">
+                    <img class="logo" src="./imgs/hshl.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="#小程序://自由座/氪空间/9S5UuKg9FakzYyp">
-                    <img class="pro" src="imgs/kkj.png" alt="">
-                    <img class="logo" src="imgs/kkjl.png" alt="">
+                    <img class="pro" src="./imgs/kkj.png" alt="">
+                    <img class="logo" src="./imgs/kkjl.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="https://www.kmjiu.com/b2c_vue/?from=singlemessage&isappinstalled=0#/list/MTTY">
-                    <img class="pro" src="imgs/kmj.png" alt="">
-                    <img class="logo" src="imgs/kmjl.png" alt="">
+                    <img class="pro" src="./imgs/kmj.png" alt="">
+                    <img class="logo" src="./imgs/kmjl.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a
                     href="https://h5.leoao.com/promotion/experience-card.html#/card-receive?UTM=0-1.2-0.3-1039.0-0.0&activityId=1039">
-                    <img class="pro" src="imgs/lk.png" alt="">
-                    <img class="logo" src="imgs/lkl.png" alt="">
+                    <img class="pro" src="./imgs/lk.png" alt="">
+                    <img class="logo" src="./imgs/lkl.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="https://j.youzan.com/HxdEf2">
-                    <img class="pro" src="imgs/ly.png" alt="">
-                    <img class="logo" src="imgs/lyl.png" alt="">
+                    <img class="pro" src="./imgs/ly.png" alt="">
+                    <img class="logo" src="./imgs/lyl.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="https://m.lzzuan.com/index.php?m=default&c=activity&a=hd&name=choker&ADTAG=TDSHCHKL">
-                    <img class="pro" src="imgs/ml.png" alt="">
-                    <img class="logo" src="imgs/mll.png" alt="">
+                    <img class="pro" src="./imgs/ml.png" alt="">
+                    <img class="logo" src="./imgs/mll.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="https://m.24tidy.com/tidyCoupon/activity/newTemp/?actId=1255">
-                    <img class="pro" src="imgs/td.png" alt="">
-                    <img class="logo" src="imgs/tdl.png" alt="">
+                    <img class="pro" src="./imgs/td.png" alt="">
+                    <img class="logo" src="./imgs/tdl.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a>
-                    <img class="pro" src="imgs/blogo.png" alt="">
-                    <img class="logo" src="imgs/slogo.png" alt="">
+                    <img class="pro" src="./imgs/blogo.png" alt="">
+                    <img class="logo" src="./imgs/slogo.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="https://www.heyqun.com.cn/active/lhkActive/index.html?type=369">
-                    <img class="pro" src="imgs/xhq.png" alt="">
-                    <img class="logo" src="imgs/xhql.png" alt="">
+                    <img class="pro" src="./imgs/xhq.png" alt="">
+                    <img class="logo" src="./imgs/xhql.png" alt="">
                 </a>
             </div>
             <div class="swiper-slide">
                 <a href="http://xuexianshou.mikecrm.com/1bMArm1">
-                    <img class="pro" src="imgs/xxs.png" alt="">
-                    <img class="logo" src="imgs/xxsl.png" alt="">
+                    <img class="pro" src="./imgs/xxs.png" alt="">
+                    <img class="logo" src="./imgs/xxsl.png" alt="">
                 </a>
             </div>
 
         </div>
     </div>
-    <img class="open" src="imgs/btn.png" alt="">
-    <img class="w100" src="imgs/ruletxt.png" alt="">
-    <script src="dist/swiper.min.js"></script>
+    <img class="open" src="./imgs/btn.png" alt="">
+    <img class="w100" src="./imgs/ruletxt.png" alt="">
+    <script src="./dist/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 4,
@@ -164,7 +165,7 @@
         rule.style.top = 617 * per + 'px'
 
         open.onclick = function () {
-            location.href = 'chudaikou.html'
+            location.href = './chudaikou.html'
         }
     </script>
 </body>
